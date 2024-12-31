@@ -22,7 +22,7 @@
     <!-- sales start  -->
     <section id="sales" class="container-fluid">
         <div class="row">
-            <div class="col-lg-8">
+            <div class="col-lg-7">
                 <div class="title-header">
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="d-flex align-items-center">
@@ -89,49 +89,284 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4">
-                <div class="d-flex align-items-center justify-content-between">
-                    <h5>Current Order</h5>
-                    <span>3</span>
+                <div class="sale-category mx-2">
+                    <div class="d-flex align-items-center sale-scroll-container">
+                        <a href="index.html" class="category-link">
+                            <button class="btn">All</button>
+                        </a>
+                        <a href="#" class="category-link">
+                            <button class="btn">Food</button>
+                        </a>
+                        <a href="#" class="category-link">
+                            <button class="btn">Snacks</button>
+                        </a>
+                        <a href="#" class="category-link">
+                            <button class="btn">Drink</button>
+                        </a>
+                        <a href="#" class="category-link">
+                            <button class="btn">Sweets</button>
+                        </a>
+                        <a href="#" class="category-link">
+                            <button class="btn">Food</button>
+                        </a>
+                        <a href="#" class="category-link">
+                            <button class="btn">Snacks</button>
+                        </a>
+                        <a href="#" class="category-link">
+                            <button class="btn">Drink</button>
+                        </a>
+                        <a href="#" class="category-link">
+                            <button class="btn">Sweets</button>
+                        </a>
+                    </div>
                 </div>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Item</th>
-                            <th>Qty</th>
-                            <th>Price</th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Coca Cola</td>
-                            <td>
-                                <div id="order-count-btn">
-                                    <div class="d-flex align-items-center" style="width: 130px;">
-                                        <div class="input-group quantity">
-                                            <div class="input-group-btn">
-                                                <button class="btn btn-minus btn-warning">
-                                                    <i class="fa fa-minus"></i>
-                                                </button>
-                                            </div>
-                                            
-                                            <input type="text" class="form-control bg-body-tertiary border-0 text-center" id="orderCount" value="1">
-                
-                                            <div class="input-group-btn">
-                                                <button class="btn btn-plus btn-warning">
-                                                    <i class="fa fa-plus"></i>
-                                                </button>
-                                            </div>
-                                        </div>
+                <div class="sale-container mx-2 mt-3">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-4 mb-3">
+                            <a href="">
+                                <div id="sale-content">
+                                    <img src="image/drinks1.jfif" alt="">
+                                    <div>
+                                        <label for="">Coca Cola</label>
+                                        <p>3,000 Ks</p>
                                     </div>
                                 </div>
-                            </td>
-                            <td>3000 Ks</td>
-                        </tr>
-                    </tbody>
-                </table>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-4  mb-3">
+                            <a href="">
+                                <div id="sale-content">
+                                    <img src="image/drinks2.jpg" alt="">
+                                    <div>
+                                        <label for="">Coca Cola coca cola coca cola</label>
+                                        <p>3,000 Ks</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-4  mb-3">
+                            <a href="">
+                                <div id="sale-content">
+                                    <img src="image/pop2.webp" alt="">
+                                    <div>
+                                        <label for="">Coca Cola coca cola coca cola</label>
+                                        <p>3,000 Ks</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-4  mb-3">
+                            <a href="">
+                                <div id="sale-content">
+                                    <img src="image/sweet1.jpg" alt="">
+                                    <div>
+                                        <label for="">Coca Cola coca cola coca cola</label>
+                                        <p>3,000 Ks</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-4  mb-3">
+                            <a href="">
+                                <div id="sale-content">
+                                    <img src="image/sweet2.jpg" alt="">
+                                    <div>
+                                        <label for="">Coca Cola coca cola coca cola</label>
+                                        <p>3,000 Ks</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="cart-detail">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                        <h5>Current Order</h5>
+                        <span>4</span>
+                    </div>
+                    <div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th class="item-column">Item</th>
+                                    <th>Qty</th>
+                                    <th class="text-end">Price( Ks )</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="pt-2 item-column">Coca cola cola cola Coca Cola</td>
+                                    <td>
+                                        <div class="quantity">
+                                            <button class="minus" aria-label="Decrease"><i class="fa fa-minus"></i></button>
+                                            <input type="text" class="input-box" value="1">
+                                            <button class="plus" aria-label="Increase"><i class="fa fa-plus"></i></button>
+                                        </div>
+                                    </td>
+                                    <td class="pt-2 text-end">3,000</td>
+                                    <td class="text-end">
+                                        <a href="">
+                                            <button class="btn text-danger"><i class="fa-regular fa-trash-can"></i></button>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-2 item-column">Soju</td>
+                                    <td>
+                                        <div class="quantity">
+                                            <button class="minus" aria-label="Decrease"><i class="fa fa-minus"></i></button>
+                                            <input type="text" class="input-box" value="1">
+                                            <button class="plus" aria-label="Increase"><i class="fa fa-plus"></i></button>
+                                        </div>
+                                    </td>
+                                    <td class="pt-2 text-end">8,000</td>
+                                    <td class="text-end">
+                                        <a href="">
+                                            <button class="btn text-danger"><i class="fa-regular fa-trash-can"></i></button>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-2 item-column">Chocolate Cake</td>
+                                    <td>
+                                        <div class="quantity">
+                                            <button class="minus" aria-label="Decrease"><i class="fa fa-minus"></i></button>
+                                            <input type="text" class="input-box" value="1">
+                                            <button class="plus" aria-label="Increase"><i class="fa fa-plus"></i></button>
+                                        </div>
+                                    </td>
+                                    <td class="pt-2 text-end">5,000</td>
+                                    <td class="text-end">
+                                        <a href="">
+                                            <button class="btn text-danger"><i class="fa-regular fa-trash-can"></i></button>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-2 item-column">Omurice</td>
+                                    <td>
+                                        <div class="quantity">
+                                            <button class="minus" aria-label="Decrease"><i class="fa fa-minus"></i></button>
+                                            <input type="text" class="input-box" value="2">
+                                            <button class="plus" aria-label="Increase"><i class="fa fa-plus"></i></button>
+                                        </div>
+                                    </td>
+                                    <td class="pt-2 text-end">20,000</td>
+                                    <td class="text-end">
+                                        <a href="">
+                                            <button class="btn text-danger"><i class="fa-regular fa-trash-can"></i></button>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-2 item-column">Omurice</td>
+                                    <td>
+                                        <div class="quantity">
+                                            <button class="minus" aria-label="Decrease"><i class="fa fa-minus"></i></button>
+                                            <input type="text" class="input-box" value="2">
+                                            <button class="plus" aria-label="Increase"><i class="fa fa-plus"></i></button>
+                                        </div>
+                                    </td>
+                                    <td class="pt-2 text-end">20,000</td>
+                                    <td class="text-end">
+                                        <a href="">
+                                            <button class="btn text-danger"><i class="fa-regular fa-trash-can"></i></button>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-2 item-column">Omurice</td>
+                                    <td>
+                                        <div class="quantity">
+                                            <button class="minus" aria-label="Decrease"><i class="fa fa-minus"></i></button>
+                                            <input type="text" class="input-box" value="2">
+                                            <button class="plus" aria-label="Increase"><i class="fa fa-plus"></i></button>
+                                        </div>
+                                    </td>
+                                    <td class="pt-2 text-end">20,000</td>
+                                    <td class="text-end">
+                                        <a href="">
+                                            <button class="btn text-danger"><i class="fa-regular fa-trash-can"></i></button>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-2 item-column">Omurice</td>
+                                    <td>
+                                        <div class="quantity">
+                                            <button class="minus" aria-label="Decrease"><i class="fa fa-minus"></i></button>
+                                            <input type="text" class="input-box" value="2">
+                                            <button class="plus" aria-label="Increase"><i class="fa fa-plus"></i></button>
+                                        </div>
+                                    </td>
+                                    <td class="pt-2 text-end">20,000</td>
+                                    <td class="text-end">
+                                        <a href="">
+                                            <button class="btn text-danger"><i class="fa-regular fa-trash-can"></i></button>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="pt-2 item-column">Omurice</td>
+                                    <td>
+                                        <div class="quantity">
+                                            <button class="minus" aria-label="Decrease"><i class="fa fa-minus"></i></button>
+                                            <input type="text" class="input-box" value="2">
+                                            <button class="plus" aria-label="Increase"><i class="fa fa-plus"></i></button>
+                                        </div>
+                                    </td>
+                                    <td class="pt-2 text-end">20,000</td>
+                                    <td class="text-end">
+                                        <a href="">
+                                            <button class="btn text-danger"><i class="fa-regular fa-trash-can"></i></button>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="footer-summary">
+                    <div class="add-modal">
+                        <label for="">Add</label>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <button class="btn me-3">Discount</button>
+                            <button class="btn">Customer</button>
+                        </div>
+                    </div>
+                    <div class="mt-2 total-summary border-top pt-1">
+                        <div class="d-flex align-items-center justify-content-between px-5">
+                            <h6>Subtotal</h6>
+                            <p>50,000 Ks</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between px-5">
+                            <h6>Taxes</h6>
+                            <p>200 Ks</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between px-5">
+                            <h6>Discount</h6>
+                            <p>0 Ks</p>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between px-5">
+                            <h6>Total Payment</h6>
+                            <p>50,200 Ks</p>
+                        </div>
+                    </div>
+                    <div class="summary-btns mt-1 pb-3 d-flex align-items-center justify-content-between">
+                        <a href="" class="text-decoration-none w-100 mx-1">
+                            <button class="btn btn-danger w-100">Clear Basket</button>
+                        </a>
+                        <a href="" class="text-decoration-none w-100 mx-1">
+                            <button class="btn">Pay Later</button>
+                        </a>
+                        <a href="" class="text-decoration-none w-100 mx-1">
+                            <button class="btn">Continue</button>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
