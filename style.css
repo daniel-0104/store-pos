@@ -282,19 +282,31 @@ body{
     justify-content: space-between;
     position: fixed;
     right: 0;
+    padding: 0;
+}
+#sales .title-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--gray);
+    padding: 5px 20px;
+    border-radius: 8px;
+}
+#sales .title-right a{
+    color: var(--purple);
 }
 #sales .col-lg-5 .cart-detail > .d-flex{
-    margin-top: 18px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--gray-border);
+    /* border-bottom: 1px solid var(--gray-border); */
+    box-shadow: rgba(140, 140, 140, 0.123) 0px 2px 8px 0px;
+    padding: 13px 20px;
 }
 #sales .col-lg-5 .cart-detail span{
     border: 1px solid var(--border);
-    padding: 0 10px;
-    font-size: 14pt;
-    margin-top: -10px;
-    margin-right: 20px;
-    border-radius: 8px;
+    padding: 0 5px;
+    font-size: 11pt;
+    margin-top: -6px;
+    margin-left: 8px;
+    border-radius: 5px;
 }
 #sales .col-lg-5 .cart-detail > div:nth-child(2){
     height: 275px;
@@ -338,8 +350,8 @@ td.item-column{
     border-radius: 8px;
     overflow: hidden;
     background-color: #f9f9f9;
-    height: 34px;
-    margin-top: 2px;
+    height: 30px;
+    margin-top: 4px;
 }
 .quantity button{
     background-color: var(--green);
@@ -347,8 +359,8 @@ td.item-column{
     border: none;
     cursor: pointer;
     font-size: 14px;
-    width: 38px;
-    height: 34px;
+    width: 34px;
+    height: 30px;
     text-align: center;
     transition: background-color 0.3s, transform 0.2s;
     display: flex;
@@ -375,6 +387,7 @@ td.item-column{
     position: sticky;
     bottom: 0;
     z-index: 1;
+    padding: 0 20px;
 }
 .add-modal{
     display: flex;
@@ -420,13 +433,18 @@ td.item-column{
     .sale-category::-webkit-scrollbar{
         display: none;
     }
+    #sales .col-lg-5 .cart-detail > div:nth-child(2){
+        margin-top: 20px;
+        height: 320px;
+        overflow-y: auto;
+    }
 } 
 @media screen and (max-width: 992px){
     #sales .title-header{
         width: 100%;
     }
     #sales .col-lg-5{
-        /* display: block; */
+        display: block;
         position: relative !important;
         margin-top: 50px;
         bottom: 0;
