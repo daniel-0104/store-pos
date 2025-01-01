@@ -83,67 +83,67 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 //....................................... ......category active link start .........................................
-// document.addEventListener('DOMContentLoaded', function() {
-//   const saleCategory = document.querySelector('.sale-scroll-container');
-//   const categoryLinks = document.querySelectorAll('.category-link button');
-//   const currentHTMLPage = window.location.pathname;
-
-//   categoryLinks.forEach(button => {
-//       button.addEventListener('click', function() {
-//           categoryLinks.forEach(btn => btn.classList.remove('active'));
-//           button.classList.add('active');
-//       });
-//   });
-
-//   categoryLinks.forEach(button => {
-//       let linkHref = button.closest('a').getAttribute('href')
-
-//       if (linkHref.startsWith(window.location.origin)){
-//           linkHref = linkHref.replace(window.location.origin, '');
-//       }
-
-//       if (currentHTMLPage === linkHref) {
-//           button.classList.add('active');
-//       }
-
-//       sessionStorage.setItem('sale-scroll-x', saleCategory.scrollLeft);
-//   });
-
-//   const saleScrollX = sessionStorage.getItem('sale-scroll-x');
-//   if (saleScrollX !== null) {
-//       saleCategory.scrollLeft = parseInt(saleScrollX, 10);
-//   }
-// });
-
 document.addEventListener('DOMContentLoaded', function() {
   const saleCategory = document.querySelector('.sale-scroll-container');
   const categoryLinks = document.querySelectorAll('.category-link button');
+  const currentHTMLPage = window.location.pathname;
 
-  // Set the first button as active by default
-  if (categoryLinks.length > 0) {
-    categoryLinks[0].classList.add('active');
-  }
+  categoryLinks.forEach(button => {
+      button.addEventListener('click', function() {
+          categoryLinks.forEach(btn => btn.classList.remove('active'));
+          button.classList.add('active');
+      });
+  });
 
-  // Restore scroll position
+  categoryLinks.forEach(button => {
+      let linkHref = button.closest('a').getAttribute('href')
+
+      if (linkHref.startsWith(window.location.origin)){
+          linkHref = linkHref.replace(window.location.origin, '');
+      }
+
+      if (currentHTMLPage === linkHref) {
+          button.classList.add('active');
+      }
+
+      sessionStorage.setItem('sale-scroll-x', saleCategory.scrollLeft);
+  });
+
   const saleScrollX = sessionStorage.getItem('sale-scroll-x');
   if (saleScrollX !== null) {
-    saleCategory.scrollLeft = parseInt(saleScrollX, 10);
+      saleCategory.scrollLeft = parseInt(saleScrollX, 10);
   }
-
-  // Set active class on button click
-  categoryLinks.forEach(button => {
-    button.addEventListener('click', function(event) {
-      event.preventDefault(); // Prevent navigation for testing
-
-      // Remove active class from all buttons, add to clicked button
-      categoryLinks.forEach(btn => btn.classList.remove('active'));
-      button.classList.add('active');
-
-      // Save scroll position
-      sessionStorage.setItem('sale-scroll-x', saleCategory.scrollLeft);
-    });
-  });
 });
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   const saleCategory = document.querySelector('.sale-scroll-container');
+//   const categoryLinks = document.querySelectorAll('.category-link button');
+
+//   // Set the first button as active by default
+//   if (categoryLinks.length > 0) {
+//     categoryLinks[0].classList.add('active');
+//   }
+
+//   // Restore scroll position
+//   const saleScrollX = sessionStorage.getItem('sale-scroll-x');
+//   if (saleScrollX !== null) {
+//     saleCategory.scrollLeft = parseInt(saleScrollX, 10);
+//   }
+
+//   // Set active class on button click
+//   categoryLinks.forEach(button => {
+//     button.addEventListener('click', function(event) {
+//       event.preventDefault(); // Prevent navigation for testing
+
+//       // Remove active class from all buttons, add to clicked button
+//       categoryLinks.forEach(btn => btn.classList.remove('active'));
+//       button.classList.add('active');
+
+//       // Save scroll position
+//       sessionStorage.setItem('sale-scroll-x', saleCategory.scrollLeft);
+//     });
+//   });
+// });
 //................................................category active link end..... .........................................
 
   
