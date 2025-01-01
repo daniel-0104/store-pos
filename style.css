@@ -225,10 +225,13 @@ body{
     color: black;
     padding: 7px 30px;
 }
-.sale-category .category-link button.active,
-.sale-category button:hover{
+.sale-category .category-link button.active{
     background-color: var(--green);
     color: white !important;
+}
+.sale-category button:hover{
+    background-color: var(--gray-border);
+    color: black;
 }
 #sale-content > img:active{
     border: 1px solid var(--green);
@@ -270,13 +273,15 @@ body{
 
 
 #sales .col-lg-5{
-    height: 100vh;
+    height: 100%;
     background-color: var(--white);
     box-shadow: rgba(140, 140, 140, 0.123) 0px 2px 8px 0px;
     border-left: 1px solid var(--gray-border);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: fixed;
+    right: 0;
 }
 #sales .col-lg-5 .cart-detail > .d-flex{
     margin-top: 18px;
@@ -412,8 +417,8 @@ td.item-column{
 }
 
 @media screen and (max-width: 1200px){
-    .sale-category{
-        overflow: hidden;
+    .sale-category::-webkit-scrollbar{
+        display: none;
     }
 } 
 @media screen and (max-width: 992px){
@@ -421,7 +426,10 @@ td.item-column{
         width: 100%;
     }
     #sales .col-lg-5{
+        /* display: block; */
+        position: relative !important;
         margin-top: 50px;
+        bottom: 0;
     }
     #sale-content > img{
         height: 210px;
@@ -429,10 +437,6 @@ td.item-column{
     td.item-column{
         width: 390px;
         max-width: 390px;
-    }
-    #sales .col-lg-5{
-        height: 100%;
-        display: block;
     }
     .footer-summary{
         margin-top: 10px;
@@ -464,6 +468,9 @@ td.item-column{
     }
 }
 @media screen  and (max-width: 530px){
+    .search-container:hover{
+        width: 170px;
+    }
     .sale-container .row{
         display: grid;
         grid-template-columns: repeat(2,1fr);
