@@ -67,7 +67,7 @@
                             <li class="nav-container">
                                 <a href="#" class="nav-content collapsed" data-bs-target="#product-dropdown" data-bs-toggle="collapse" aria-expanded="false">
                                     <div>
-                                        <?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" stroke-width="1.2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.6954 7.18536L11.6954 11.1854L12.3046 9.81464L3.3046 5.81464L2.6954 7.18536ZM12.75 21.5V10.5H11.25V21.5H12.75ZM12.3046 11.1854L21.3046 7.18536L20.6954 5.81464L11.6954 9.81464L12.3046 11.1854Z" fill="#000000"></path><path d="M3 17.1101V6.88992C3 6.65281 3.13964 6.43794 3.35632 6.34164L11.7563 2.6083C11.9115 2.53935 12.0885 2.53935 12.2437 2.6083L20.6437 6.34164C20.8604 6.43794 21 6.65281 21 6.88992V17.1101C21 17.3472 20.8604 17.5621 20.6437 17.6584L12.2437 21.3917C12.0885 21.4606 11.9115 21.4606 11.7563 21.3917L3.35632 17.6584C3.13964 17.5621 3 17.3472 3 17.1101Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M7.5 4.5L16.1437 8.34164C16.3604 8.43794 16.5 8.65281 16.5 8.88992V12.5" stroke="#000000" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-package-plus"><path d="M16 16h6"/><path d="M19 13v6"/><path d="M21 10V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l2-1.14"/><path d="m7.5 4.27 9 5.15"/><polyline points="3.29 7 12 12 20.71 7"/><line x1="12" x2="12" y1="22" y2="12"/></svg>
                                     </div>
                                     <span class="ps-3">Products</span>
                                 </a>
@@ -86,7 +86,40 @@
                                     </li>
                                 </ul>
                             </li>
+                            <li class="nav-container">
+                                <a href="#" class="nav-content collapsed" data-bs-target="#general-dropdown" data-bs-toggle="collapse" aria-expanded="false">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-cog"><circle cx="18" cy="15" r="3"/><circle cx="9" cy="7" r="4"/><path d="M10 15H6a4 4 0 0 0-4 4v2"/><path d="m21.7 16.4-.9-.3"/><path d="m15.2 13.9-.9-.3"/><path d="m16.6 18.7.3-.9"/><path d="m19.1 12.2.3-.9"/><path d="m19.6 18.7-.4-1"/><path d="m16.8 12.3-.4-1"/><path d="m14.3 16.6 1-.4"/><path d="m20.7 13.8 1-.4"/></svg>
+                                    </div>
+                                    <span class="ps-3">General</span>
+                                </a>
+                                <ul id="general-dropdown" class="px-3 nav-dropdown list-unstyled collapse">
+                                    <li>
+                                        <a href="profile.html"  class="nav-link">Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link">Use camera to scan barcodes</a>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
+                        <div id="nav-bottom">
+                            <div class="dark-mode py-2">
+                                <h6 class="mt-1">Dark Mode</h6>
+                                <label class="toggle-switch" >
+                                    <input type="checkbox" id="theme-toggle">
+                                    <div class="toggle-switch-background">
+                                      <div class="toggle-switch-handle"></div>
+                                    </div>
+                                </label>
+                            </div>
+                            <form action="#" method="POST">
+                                <button class="d-flex align-items-center bg-transparent text-danger border-0 ms-5 ps-1">
+                                    <i class="fa-solid fa-power-off me-2"></i>
+                                    <h6 class="mt-1">Logout</h6>
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
                 <div class="sale-category mx-2">
@@ -120,9 +153,9 @@
                         </a>
                     </div>
                 </div>
-                <div class="sale-container mx-4 mt-3">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-3 col-sm-4 mb-3">
+                <div class="sale-container mx-3 mt-3">
+                    <div class="row mb-5">
+                        <div class="col-lg-3  col-md-3 col-sm-4 mb-3">
                             <button>
                                 <div id="sale-content">
                                     <img src="image/drinks1.jfif" alt="">
@@ -275,9 +308,9 @@
                                 </select>
                             </div>
                             <div class="">
-                                <a href="" type="button" class="btn position-relative" title="pay later cart">
+                                <a href="" type="button" class="btn border-0 position-relative" title="pay later cart">
                                     <i class="fa-solid fa-cart-shopping"></i>
-                                    <span class="position-absolute ms-2 mt-0 translate-middle badge fw-medium text-dark">
+                                    <span class="position-absolute ms-2 mt-0 translate-middle badge fw-medium">
                                         4
                                     </span>
                                 </a>
@@ -474,7 +507,7 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <h4 class="modal-title d-block w-100 text-center" id="add-discountLabel">Add Discount</h4>
-                            <button type="button" class="btn-close border-none shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="close-btn border-none shadow-none" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
                         </div>
                         <div class="modal-body">
                             <form action="#" class="mt-1">
@@ -496,7 +529,7 @@
                     <div class="modal-content">
                         <div class="modal-header">
                             <h4 class="modal-title d-block w-100 text-center" id="add-customerLabel">Add Customer</h4>
-                            <button type="button" class="btn-close border-none shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <button type="button" class="close-btn border-none shadow-none" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
                         </div>
                         <div class="modal-body">
                             <form action="#" class="mt-1">

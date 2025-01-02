@@ -146,4 +146,31 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 //................................................category active link end..... .........................................
 
+
+// ...................................................... light mode toggle start .................................
+const body = document.querySelector('body');
+// const homeText = document.querySelectorAll('.home-text');
+// const bodyHr = document.querySelectorAll('hr');
+const toggleCheckbox = document.querySelector('#theme-toggle');
+
+function setTheme(isDarkMode) {
+    if (isDarkMode) {
+        body.classList.add('dark');
+        toggleCheckbox.checked = true;
+    } else {
+        body.classList.remove('dark');
+        toggleCheckbox.checked = false;
+    }
+}
+const savedTheme = localStorage.getItem('theme');
+setTheme(savedTheme === 'dark');
+
+toggleCheckbox.addEventListener('change', function () {
+    const isDarkMode = toggleCheckbox.checked;
+    setTheme(isDarkMode);
+    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+});
+// ...................................................... light mode toggle end .................................
+
+
   
